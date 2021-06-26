@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Biofourmis_Test" parallel="tests">
+
+    <test name="ChromeTest">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="com.test.Scenario1Test1"/>
+            <class name="com.test.Scenario1Test2"/>
+            <class name="com.test.Scenario2MMPTest"/>
+            <class name="com.test.Scenario3MMPTest"/>
+        </classes>
+    </test>
+
+    <test name="FirefoxTest">
+        <parameter name="browser" value="Firefox"/>
+        <classes>
+            <class name="com.test.Scenario1Test1"/>
+            <class name="com.test.Scenario1Test2"/>
+            <class name="com.test.Scenario2MMPTest"/>
+            <class name="com.test.Scenario3MMPTest"/>
+        </classes>
+    </test>
+</suite>
